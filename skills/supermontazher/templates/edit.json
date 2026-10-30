@@ -1,0 +1,61 @@
+{
+ "name": "myvideo",
+ "title": "Название ролика",
+ "remotion": "../remotion",
+ "public": "myvideo",
+ "talk": "talk",
+ "fix": {
+  "клод": "Claude"
+ },
+ "pauses": [
+  {
+   "after": "фраза перед паузой",
+   "dur": 1.0,
+   "why": "зачем пауза"
+  }
+ ],
+ "music": {
+  "src": "music/track.wav",
+  "public_name": "music.wav",
+  "bpm": 120,
+  "from": 0,
+  "join": 60,
+  "bars": [
+   8
+  ],
+  "trim": true,
+  "min_tail": 3.0
+ },
+ "render": {
+  "comp": "MyVideo",
+  "draft": "MyVideoDraft",
+  "audio": "MyVideoAudio",
+  "animatic": "MyVideoAnimatic",
+  "out": "Название ролика.mp4"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "title": "Хук",
+   "at": 0,
+   "note": "что происходит в сцене",
+   "ev": {
+    "boom": "слово удара"
+   }
+  },
+  {
+   "id": "main",
+   "title": "Основа",
+   "at": "фраза начала сцены -0.1",
+   "note": "что происходит в сцене"
+  }
+ ],
+ "windows": {
+  "loud": [
+   [
+    "фраза]",
+    "@main"
+   ]
+  ]
+ }
+}
